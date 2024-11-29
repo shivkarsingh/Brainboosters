@@ -1,0 +1,70 @@
+#vanta-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; 
+}
+.contain {
+  color: #fe6761;
+  margin: auto;
+    width: 50%;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    border: 5px solid;
+    border-radius: 0px;
+
+}
+
+.clock {
+  margin: auto;
+  width: 50%;
+  padding-top: 0px;
+}
+
+.block {
+  margin: auto;
+  width: 50%;
+  padding-top: 50px;
+}
+
+.title {
+
+  color: whitesmoke;
+    padding-left: 185px;
+
+}
+
+
+.title2 {
+  padding-top: 10px;
+    padding-left: 220px;
+    color: whitesmoke;
+
+}
+
+
+.box {
+  margin: auto;
+  padding-top: 10px;
+  padding-left: 259px;
+}
+
+.box2 {
+  margin: auto;
+  padding-top: 10px;
+  padding-left: 282px;
+}
+
+.box3 {
+  margin: auto;
+  padding-top: 10px;
+  padding-left: 618px;
+}
+
+.stopbox {
+  margin: auto;
+  padding-top: 10px;
+  padding-left: 289px;
+}

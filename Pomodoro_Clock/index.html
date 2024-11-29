@@ -1,0 +1,95 @@
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/Brainboosters/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/Brainboosters/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/Brainboosters/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/Brainboosters/favicon_io/site.webmanifest">
+
+  <title>Brainboosters-PomodoroClock</title>
+
+</head>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.css">
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></scrip>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<body>
+
+  <div id="vanta-container"></div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="script.js"></script>
+
+
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.min.js"></script>
+
+<div class="fluid-containter">
+
+<div class="contain">
+
+  <div class="title"><h1>Pomodoro Clock</h1></div>
+
+
+  <div class="clock"></div>
+
+  <div class="box"><button class="resume btn btn-success">Start</button>
+    <button class="stop btn btn-danger">Stop</button><br></div>
+
+  <div class="box2"><button class="plus btn btn-info">+</button>
+    <button class="subtract btn btn-info">-</button></div>
+
+  <div class="title2"><h1>Break Clock</h1></div>
+
+  <div class="block">
+
+  </div>
+
+  <div class="box2"><button class="breakplus btn btn-info">+</button>
+    <button class="breaksubtract btn btn-info">-</button><br>
+  </div>
+  <div class="stopbox"> <button class="breakstop btn btn-danger ">Stop</button>
+
+</div>
+
+
+</div>
+
+</div>
+
+<div class="box3"><button class="reset btn btn-warning">RESET</button></div>
+</div>
+
+
+<script src="three.r134.min.js"></script>
+<script src="vanta.globe.min.js"></script>
+<script>
+VANTA.GLOBE({
+  el: "#vanta-container", 
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  color: "#ff0057", 
+  size: 0.80,
+  backgroundColor: "#f0e0f" 
+});
+</script>
+
+
+
+</body>

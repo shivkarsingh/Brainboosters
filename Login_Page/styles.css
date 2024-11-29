@@ -1,0 +1,155 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#uk {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #2e2e2e, #121212);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.login-box {
+    background: transparent; /* Set background to transparent */
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 40px 30px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out, transform 0.3s ease-in-out; /* Added transition for zoom effect */
+    position: relative;
+    backdrop-filter: blur(10px);
+}
+
+.login-box:hover {
+    border-color: #0091ff;
+    box-shadow: 0 15px 40px rgba(0, 188, 212, 0.4);
+    transform: scale(1.05); /* Apply zoom effect on hover */
+}
+
+.login-box h2 {
+    margin-bottom: 10px;
+    font-size: 28px;
+    font-weight: 600;
+    color:#0091ff;
+}
+
+.subtitle {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #bbb;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 10px 10px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    border: none;
+    border-bottom: 2px solid #444;
+    outline: none;
+    background: transparent;
+}
+
+.input-container label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #bbb;
+    font-size: 16px;
+    font-weight: 400;
+    transition: 0.3s;
+    pointer-events: none;
+}
+
+.input-container input:focus + label,
+.input-container input:valid + label {
+    top: -15px;
+    left: 10px;
+    color: #00bcd4;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.login-button {
+    display: inline-block;
+    width: 100%;
+    padding: 12px 25px;
+    background-color: #006fee;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.login-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.login {
+    display: inline-block;
+    padding: 12px 25px;
+    background: linear-gradient(135deg, #00bcd4, #00796b);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;  /* Remove underline */
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.login:hover {
+    background: linear-gradient(135deg, #00796b, #00bcd4);
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.signup-text {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #bbb;
+}
+
+.signup-text a {
+    color: rgb(255, 156, 43);
+    text-decoration: none;
+    font-weight: 600;
+}

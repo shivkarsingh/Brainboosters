@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrainBoosters - Educational Website</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/Brainboosters/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/Brainboosters/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/Brainboosters/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/Brainboosters/favicon_io/site.webmanifest">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    
+<script src="https://cdn.jsdelivr.net/npm/three@0.131.2/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@0.5.23/dist/vanta.waves.min.js"></script>
+
+
+</head>
+<body>
+
+    <div id="vanta-container"></div>
+        
+    <header>
+        <nav class="navbar bg-cream">
+            <div class="logo">
+                <a href="#" style="text-decoration: none;">
+                    
+                    <span  id="name" style="font-weight: bolder; color: #f31260; font-size: 2.2rem; font-family: 'Finger Paint',cursive; ;">BRAINBOOSTERS</span>
+                </a>
+               
+            </div>
+            <ul class="nav-list nl">
+                <li><a href="#bb">Home</a></li>
+                <li><a href="#aboutus">About Us</a></li>
+                <li><a href="Pomodoro_Clock/index.html" target="_blank">Pomodoro</a></li>
+                <li><a href="Task-List/index.html" target="_blank">ToDo</a></li>
+                <li><a href="#timer">More</a></li>
+                <li><a href="#contactus">Contact Us</a></li>
+           
+                <button class="login nl" onclick="window.open('Login_Page/index.html', '_blank');">Login</button>
+
+
+
+               
+            </ul>
+
+
+            
+        </nav>
+    </header>
+
+
+    <section class="hero bg-cream">
+        <div class="main">
+            <div class="hero-content">
+                <div>
+                    <h2>Empower your work with <span>BrainBoosters</span></h2>
+                <p>Streamline your work with our powerful tools. From organized to-do lists to a focused Pomodoro timer and much more, BrainBoosters is your key to productivity.</p>
+                <div class="buttons">
+                    <button class="login nl" onclick="window.open('Signup/index.html', '_blank');">Signup</button>
+                </div>
+                </div>
+                <div class="image-container">
+                    <img src="/Brainboosters/doodles/Happy Bunch - Desk.png" alt="">
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+   
+
+
+    <section id="aboutus" class="feature mt-4">
+        <div class="heading">
+            <h4>About <span>Us.</span></h4>
+            <p>Welcome to <span>BrainBoosters</span>, your ultimate productivity companion designed for students and professionals alike. At <span>BrainBoosters</span>, we understand the challenges of balancing studies, work, and personal life. Our mission is to empower you with tools that streamline your day, boost efficiency, and enhance your overall productivity.</p>
+        </div>
+        <div class="feature-card">
+            <div class="card">
+                <svg viewBox="0 0 33 46" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-white"><path d="M24.75 23H8.25V28.75H24.75V23ZM32.3984 9.43359L23.9852 0.628906C23.5984 0.224609 23.0742 0 22.5242 0H22V11.5H33V10.952C33 10.3859 32.7852 9.83789 32.3984 9.43359ZM19.25 12.2188V0H2.0625C0.919531 0 0 0.961328 0 2.15625V43.8438C0 45.0387 0.919531 46 2.0625 46H30.9375C32.0805 46 33 45.0387 33 43.8438V14.375H21.3125C20.1781 14.375 19.25 13.4047 19.25 12.2188ZM5.5 6.46875C5.5 6.07164 5.80766 5.75 6.1875 5.75H13.0625C13.4423 5.75 13.75 6.07164 13.75 6.46875V7.90625C13.75 8.30336 13.4423 8.625 13.0625 8.625H6.1875C5.80766 8.625 5.5 8.30336 5.5 7.90625V6.46875ZM5.5 12.2188C5.5 11.8216 5.80766 11.5 6.1875 11.5H13.0625C13.4423 11.5 13.75 11.8216 13.75 12.2188V13.6562C13.75 14.0534 13.4423 14.375 13.0625 14.375H6.1875C5.80766 14.375 5.5 14.0534 5.5 13.6562V12.2188ZM27.5 39.5312C27.5 39.9284 27.1923 40.25 26.8125 40.25H19.9375C19.5577 40.25 19.25 39.9284 19.25 39.5312V38.0938C19.25 37.6966 19.5577 37.375 19.9375 37.375H26.8125C27.1923 37.375 27.5 37.6966 27.5 38.0938V39.5312ZM27.5 21.5625V30.1875C27.5 30.9817 26.8847 31.625 26.125 31.625H6.875C6.11531 31.625 5.5 30.9817 5.5 30.1875V21.5625C5.5 20.7683 6.11531 20.125 6.875 20.125H26.125C26.8847 20.125 27.5 20.7683 27.5 21.5625Z" fill="white"></path></svg>
+                <h4>To-Do List Management</h4>
+                <p>Stay organized with our intuitive to-do list feature. Easily manage tasks, set priorities, and track your progress with personalized task lists tailored to your needs.</p>
+            </div>
+            <div class="card">
+                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-white"><path d="M12 0C11.0532 0 10.2857 0.767511 10.2857 1.71432V5.14285H13.7142V1.71432C13.7142 0.767511 12.9467 0 12 0Z" fill="white"></path><path d="M36 0C35.0532 0 34.2856 0.767511 34.2856 1.71432V5.14285H37.7142V1.71432C37.7143 0.767511 36.9468 0 36 0Z" fill="white"></path><path d="M42.8571 5.14282H37.7143V12C37.7143 12.9468 36.9468 13.7143 36 13.7143C35.0532 13.7143 34.2857 12.9468 34.2857 12V5.14282H13.7142V12C13.7142 12.9468 12.9467 13.7143 11.9999 13.7143C11.0531 13.7143 10.2856 12.9468 10.2856 12V5.14282H5.14285C2.30253 5.14282 0 7.44535 0 10.2857V42.8571C0 45.6974 2.30253 48 5.14285 48H42.8571C45.6975 48 48 45.6974 48 42.8571V10.2857C48 7.44535 45.6975 5.14282 42.8571 5.14282ZM44.5714 42.8571C44.5714 43.8039 43.8039 44.5714 42.857 44.5714H5.14285C4.19605 44.5714 3.42854 43.8039 3.42854 42.8571V20.5714H44.5714V42.8571Z" fill="white"></path><path d="M13.7142 23.9999H10.2857C9.33889 23.9999 8.57138 24.7674 8.57138 25.7142C8.57138 26.661 9.33889 27.4285 10.2857 27.4285H13.7142C14.661 27.4285 15.4285 26.661 15.4285 25.7142C15.4285 24.7674 14.661 23.9999 13.7142 23.9999Z" fill="white"></path><path d="M25.7143 23.9999H22.2857C21.3389 23.9999 20.5714 24.7674 20.5714 25.7142C20.5714 26.661 21.3389 27.4285 22.2857 27.4285H25.7143C26.6611 27.4285 27.4286 26.661 27.4286 25.7142C27.4286 24.7674 26.6611 23.9999 25.7143 23.9999Z" fill="white"></path><path d="M37.7143 23.9999H34.2857C33.3389 23.9999 32.5714 24.7674 32.5714 25.7142C32.5714 26.661 33.3389 27.4285 34.2857 27.4285H37.7143C38.6611 27.4285 39.4286 26.661 39.4286 25.7142C39.4286 24.7674 38.661 23.9999 37.7143 23.9999Z" fill="white"></path><path d="M13.7142 30.8571H10.2857C9.33889 30.8571 8.57138 31.6246 8.57138 32.5714C8.57138 33.5182 9.33889 34.2857 10.2857 34.2857H13.7142C14.661 34.2857 15.4285 33.5182 15.4285 32.5714C15.4285 31.6246 14.661 30.8571 13.7142 30.8571Z" fill="white"></path><path d="M25.7143 30.8571H22.2857C21.3389 30.8571 20.5714 31.6246 20.5714 32.5714C20.5714 33.5182 21.3389 34.2857 22.2857 34.2857H25.7143C26.6611 34.2857 27.4286 33.5182 27.4286 32.5714C27.4286 31.6246 26.6611 30.8571 25.7143 30.8571Z" fill="white"></path><path d="M37.7143 30.8571H34.2857C33.3389 30.8571 32.5714 31.6246 32.5714 32.5714C32.5714 33.5182 33.3389 34.2857 34.2857 34.2857H37.7143C38.6611 34.2857 39.4286 33.5182 39.4286 32.5714C39.4285 31.6246 38.661 30.8571 37.7143 30.8571Z" fill="white"></path><path d="M13.7142 37.7142H10.2857C9.33889 37.7142 8.57138 38.4817 8.57138 39.4286C8.57138 40.3754 9.33889 41.1428 10.2857 41.1428H13.7142C14.661 41.1428 15.4285 40.3753 15.4285 39.4284C15.4285 38.4816 14.661 37.7142 13.7142 37.7142Z" fill="white"></path><path d="M25.7143 37.7142H22.2857C21.3389 37.7142 20.5714 38.4817 20.5714 39.4285C20.5714 40.3754 21.3389 41.1429 22.2857 41.1429H25.7143C26.6611 41.1429 27.4286 40.3754 27.4286 39.4285C27.4286 38.4817 26.6611 37.7142 25.7143 37.7142Z" fill="white"></path><path d="M37.7143 37.7142H34.2857C33.3389 37.7142 32.5714 38.4817 32.5714 39.4285C32.5714 40.3754 33.3389 41.1429 34.2857 41.1429H37.7143C38.6611 41.1429 39.4286 40.3754 39.4286 39.4285C39.4286 38.4817 38.661 37.7142 37.7143 37.7142Z" fill="white"></path></svg>
+                <h4>Progress Tracking System</h4>
+                <p>Monitor your productivity and accomplishments effortlessly. Our tracking tools provide insightful metrics and visualizations to help you stay on top of your goals.</p>
+            </div>
+            <div class="card">
+                <svg viewBox="0 0 55 44" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-white"><path d="M8.25 19.25C11.2836 19.25 13.75 16.7836 13.75 13.75C13.75 10.7164 11.2836 8.25 8.25 8.25C5.21641 8.25 2.75 10.7164 2.75 13.75C2.75 16.7836 5.21641 19.25 8.25 19.25ZM46.75 19.25C49.7836 19.25 52.25 16.7836 52.25 13.75C52.25 10.7164 49.7836 8.25 46.75 8.25C43.7164 8.25 41.25 10.7164 41.25 13.75C41.25 16.7836 43.7164 19.25 46.75 19.25ZM49.5 22H44C42.4875 22 41.1211 22.6102 40.1242 23.5984C43.5875 25.4977 46.0453 28.9266 46.5781 33H52.25C53.7711 33 55 31.7711 55 30.25V27.5C55 24.4664 52.5336 22 49.5 22ZM27.5 22C32.8195 22 37.125 17.6945 37.125 12.375C37.125 7.05547 32.8195 2.75 27.5 2.75C22.1805 2.75 17.875 7.05547 17.875 12.375C17.875 17.6945 22.1805 22 27.5 22ZM34.1 24.75H33.3867C31.5992 25.6094 29.6141 26.125 27.5 26.125C25.3859 26.125 23.4094 25.6094 21.6133 24.75H20.9C15.4344 24.75 11 29.1844 11 34.65V37.125C11 39.4023 12.8477 41.25 15.125 41.25H39.875C42.1523 41.25 44 39.4023 44 37.125V34.65C44 29.1844 39.5656 24.75 34.1 24.75ZM14.8758 23.5984C13.8789 22.6102 12.5125 22 11 22H5.5C2.46641 22 0 24.4664 0 27.5V30.25C0 31.7711 1.22891 33 2.75 33H8.41328C8.95469 28.9266 11.4125 25.4977 14.8758 23.5984Z" fill="white"></path></svg>
+                <h4>Community Collaboration</h4>
+                <p>Connect with like-minded individuals and experts in our vibrant community. Share insights, seek advice, and collaborate on projects to achieve mutual success.</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="pomodoro"></div>
+    <section  class="feature2 mt-5">
+        <div class="feature-card2">
+
+
+            <div class="card2">
+                <h4>What is <span>Pomodoro</span>?</h4>
+                <p>
+                    The <b style="color: white;">Pomodoro</b> Technique is a time management method developed by Francesco Cirillo
+                    in the late 1980s. It aims to improve productivity and focus by breaking work into
+                    intervals, traditionally 25 minutes in length, separated by short breaks. The technique
+                    is named after the Italian word for 'tomato,' inspired by Cirillo's use of a tomato-shaped
+                    kitchen timer.
+                </p>
+                <br>
+                <p>
+                    The key principles of the <b style="color: white;">Pomodoro</b> Technique include:
+                </p>
+                
+                <ul>
+                    <li><span>Focus Sessions</span> : Work on a single task for a set period (usually 25 minutes), known as a Pomodoro.</li>
+                    <li><span>Short Breaks</span> : After completing a Pomodoro, take a short break (typically 5 minutes) to rest and recharge.</li>
+                    <li><span>Longer Breaks</span> : After completing four Pomodoros, take a longer break (around 15–30 minutes) to relax and reflect.</li>
+                </ul>
+                <br>
+                <p>
+                    Benefits of using the Pomodoro Technique include enhanced productivity, reduced procrastination,
+                    improved focus, and better time management skills. It's a popular method among students,
+                    professionals, and anyone looking to work more efficiently.
+                </p>
+                
+                
+
+                <div class="explore">
+                    <button><a href="Pomodoro_Clock/index.html" class="nl" target="_blank" style="text-decoration: none;"> Explore</a></button>
+                </div>
+                
+                
+            </div>
+        </div>
+    </section>
+
+
+    <div id="todo"></div>
+    <section   class="feature3 mt-5">
+        <div class="feature-card3">
+
+
+            <div class="card3">
+                <h4>Our <span>To-Do</span> List Feature</h4>
+                <br>
+                <p>
+                    Welcome to the <b>To-Do List</b> feature on our website! Stay organized and productive with our easy-to-use task management tool. Whether you're a student juggling assignments or a professional managing deadlines, our to-do list helps you stay on top of your tasks efficiently.
+                </p>
+                <br>
+                <ul>
+                    <li><span>Add Tasks</span> : Simply click the "+" button to add new tasks.</li>
+                    <li><span>Prioritize</span> : Drag and drop tasks to prioritize them according to your needs.</li>
+                    <li><span>Mark Complete</span> : Check off tasks as you complete them.</li>
+                    <li><span>Stay Updated</span> : Tasks are saved automatically so you can access them anytime.</li>
+                </ul>
+                <br>
+                <p>Start organizing your day with our To-Do List feature today!</p>
+                <br>
+                <div class="explore">
+                    <button><a href="Task-List/index.html" class="nl" target="_blank" style="text-decoration: none;"> Explore</a></button>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <div id="timer"></div>
+    <section  class="everything mt-6">
+        <div class="main">
+            <div class="content">
+                <div class="orange-circle"></div>
+                <h4>Access All Features with Our <span>Mobile App</span></h4>
+                <p> Stay productive on the move with span
+                    <span style="font-weight: bold; color: white; font-size: 23px;">BrainBoosters</span> mobile app. Whether you're commuting, traveling, or simply away from your desk, our app ensures you have full access to all features from your smartphone or tablet. Seamlessly manage tasks, track progress, and stay connected wherever you go.
+                </p>
+            </div>
+            <div class="img">
+                <div class="blue"></div>
+                <div class="orange"></div>
+                <img src="/Brainboosters/doodles/Happy Bunch - Chat.png"">
+                
+            </div>
+        </div>
+    </section>
+
+
+    <section class="user-interface">
+        <div class="main">
+            <div class="img">
+                <img src="/Brainboosters/doodles/Happy Bunch - Astronaut.png" class="vcall" alt="">
+                <div class="green"></div>
+                <div class="blue"></div>
+            </div>
+            <div class="content">
+                <div class="orange-circle"></div>
+                <h4>Master Your <span>Time</span></h4>
+                <ul class="list">
+                
+
+                 <p>Track how you spend your time on different tasks and projects with                     <span style="font-weight: bold; color: white; font-size: 23px;">BrainBooster's</span> Time Tracking feature. Gain valuable insights into your productivity patterns, identify areas for improvement, and stay focused on achieving your goals. Whether you're a student balancing study sessions or a professional managing multiple projects, our Time Tracking tool helps you make the most of every minute.</p>
+                  
+                    
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="tool mt-5">
+        <div class="main">
+            <div class="content">
+                <div class="orange-circle"></div>
+                <h4><span>Collaborate </span>and Grow Together</h4>
+                <p>Join study groups and participate in forums on <span style="font-weight: bold; color: white; font-size: 23px;">BrainBooster's</span> to collaborate with peers, share experiences, and expand your knowledge base. Whether you're a student seeking study partners or a professional looking to network with like-minded individuals, our platform provides a supportive community to foster learning and growth. Engage in meaningful discussions, exchange ideas, and build valuable connections that enhance your academic and professional journey.</p>
+            </div>
+            <div class="img">
+                <img src="/Brainboosters/doodles/Stuck at Home - Group Call.png" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="test mt-6">
+        <div class="main">
+            <div class="img">
+                <img src="/Brainboosters/doodles/Allura - UI Windows.png" alt="">
+            </div>
+            <div class="content">
+                <div class="orange-circle"></div>
+                <h4>Capture <span>Ideas</span> with <span>Notes</span></h4>
+                <p>With <span style="font-weight: bold; color: white; font-size: 23px;">BrainBooster's</span>  Note-Taking feature, keep your ideas organized in digital notebooks that you can access and edit anytime, anywhere. Whether you're in a lecture, a meeting, or simply brainstorming, our intuitive note-taking tools ensure your thoughts are always at your fingertips. Stay productive and focused with the ability to create, update, and organize notes effortlessly.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="management mt-5">
+        <div class="main">
+            <div class="content">
+                <div class="orange-circle"></div>
+                <h4><span>WOW!</span> Secure, Accessible File Management</h4>
+                <p>Store and share your files securely with  <span style="font-weight: bold; color: white; font-size: 23px;">BrainBooster's</span> File Storage and Sharing feature. Integrated with leading cloud services like Google Drive and Dropbox, our platform ensures easy access to your documents, presentations, and projects from anywhere. Whether you're collaborating on team projects or managing personal files, enjoy peace of mind with robust security and convenient file management capabilities.</p>
+            </div>
+            <div class="img">
+                <img src="/Brainboosters/doodles/Humaaans - Space.png" alt="">
+            </div>
+        </div>
+    </section>
+ 
+
+    <div id="contactus"></div>
+    <section class="footer">
+
+
+        <div class="part">
+
+            <div class="p1">
+                <div class="intro">
+                    <div class="introo"> <span  id="in" style="font-weight: bolder;  font-size: 1.9rem; font-family: 'Finger Paint',cursive; ;">BRAINBOOSTERS</span></div>
+                    <div class="sgn">"Where Productivity meets Performance"</div>
+                </div>
+                <div class="btns">
+                    <button class="login nl" onclick="window.open('Login_Page/index.html', '_blank');">Login</button>
+                    <button class="login nl" onclick="window.open('Signup/index.html', '_blank');" style="background-color: #ff4ecd;">Signup</button>
+                </div>
+            </div>
+
+
+            <div class="p2">
+                <div class="ql">
+                    Quick Links
+                </div>
+                <div class="lists">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#aboutus">About Us</a></li>
+                        <li><a href="#pomodoro">Pomodoro</a></li>
+                        <li><a href="#todo">To-Do</a></li>
+                        <li><a href="#timer">More</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="p3">
+                <div class="git">Get In Touch</div>
+
+
+                <div class="contact-container">
+                    <a href="mailto:shivkarcse@gmail.com">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope" style="color: white;"></i>
+                            <span>Email</span>
+                        </div>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/shivkar-singh/" target="_blank"><div class="contact-item">
+                        <i class="fab fa-linkedin" style="color: #0A66C2;"></i>
+                        <span>LinkedIn</span>
+                    </div></a>
+
+                   <a href="https://github.com/shivkarsingh" target="_blank">
+                    <div class="contact-item">
+                        <i class="fab fa-github" style="color: #ffffff;"></i>
+                        <span>Github</span>
+                    </div>
+                   </a>
+
+                    <a href="https://github.com/shivkarsingh" target="_blank">
+                        <div class="contact-item">
+                            <i class="fab fa-twitter" style="color: #1DA1F2;"></i>
+                            <span>Twitter</span>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/shivkarsingh" target="_blank"><div class="contact-item">
+                        <i class="fab fa-youtube" style="color: #FF0000;"></i>
+                        <span>YouTube</span>
+                    </div></a>
+
+                   <a href="https://github.com/shivkarsingh" target="_blank"> <div class="contact-item">
+                    <i class="fab fa-instagram" style="color: #E4405F;"></i>
+                    <span>Instagram</span>
+                    </div></a>
+
+                    <a href="tel:+918209292868"><div class="contact-item" target="_blank">
+                        <i class="fas fa-phone" style="color: #25D366;"></i>
+                        <span>Call</span>
+                    </div></a>
+
+                </div>
+
+            </div>
+
+
+        </div>
+        
+        
+        <div class="final">
+            
+        <div class="love">
+            <span>Made with <i class="fas fa-heart"></i> </span>
+        </div>
+
+
+
+        <div class="copyright">
+            <div>
+                © 2024 BrainBoosters Inc. All rights reserved.
+            </div>
+        </div>
+
+        </div>
+
+
+    </section>
+
+
+    <script src="three.r134.min.js"></script>
+    <script src="vanta.waves.min.js"></script>
+    <script>
+        VANTA.WAVES({
+          el: "#vanta-container",
+          mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color:  0x0,
+            shininess: 30.00,
+            waveHeight: 23.50,
+            waveSpeed: 0.30,
+            zoom: 0.89
+        })
+        </script>
+        <script src="index.js"></script>
+    
+</body>
+</html>
